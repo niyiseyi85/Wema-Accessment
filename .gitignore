@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/WemaAccessment.API/bin/Debug/net8.0
+/WemaAccessment.API/obj
+/WemaAccessment.Common/bin/Debug/net8.0
+/WemaAccessment.Common/obj
+/WemaAccessment.Data/bin/Debug/net8.0
+/WemaAccessment.Data/obj
+/WemaAccessment.Service/bin/Debug/net8.0
+/WemaAccessment.Service/obj
+/WemaAccessment.Service.Test/bin/Debug/net8.0
+/WemaAccessment.Service.Test/obj

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{F0B1A2A8-CF73-4219-9EF7-5D1F8F4DF0BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{EDD9B664-6DC8-41CA-86B6-C581CF5AC08B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WemaAccessment.API", "WemaAccessment.API\WemaAccessment.API.csproj", "{C3E12A15-4072-486B-8C0A-44D4A99BA644}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WemaAccessment.Data", "WemaAccessment.Data\WemaAccessment.Data.csproj", "{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WemaAccessment.Service", "WemaAccessment.Service\WemaAccessment.Service.csproj", "{A8221100-7907-4883-92F0-ABF7E3C81682}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WemaAccessment.Common", "WemaAccessment.Common\WemaAccessment.Common.csproj", "{24541876-F4FF-4F45-9DDF-55EE90A63FF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WemaAccessment.Service.Test", "WemaAccessment.Service.Test\WemaAccessment.Service.Test.csproj", "{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E12A15-4072-486B-8C0A-44D4A99BA644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E12A15-4072-486B-8C0A-44D4A99BA644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E12A15-4072-486B-8C0A-44D4A99BA644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E12A15-4072-486B-8C0A-44D4A99BA644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8221100-7907-4883-92F0-ABF7E3C81682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8221100-7907-4883-92F0-ABF7E3C81682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8221100-7907-4883-92F0-ABF7E3C81682}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8221100-7907-4883-92F0-ABF7E3C81682}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24541876-F4FF-4F45-9DDF-55EE90A63FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24541876-F4FF-4F45-9DDF-55EE90A63FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24541876-F4FF-4F45-9DDF-55EE90A63FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24541876-F4FF-4F45-9DDF-55EE90A63FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C3E12A15-4072-486B-8C0A-44D4A99BA644} = {F0B1A2A8-CF73-4219-9EF7-5D1F8F4DF0BE}
+		{0670C23C-F4C4-4A76-AC86-19E9E37FC3FB} = {F0B1A2A8-CF73-4219-9EF7-5D1F8F4DF0BE}
+		{A8221100-7907-4883-92F0-ABF7E3C81682} = {F0B1A2A8-CF73-4219-9EF7-5D1F8F4DF0BE}
+		{24541876-F4FF-4F45-9DDF-55EE90A63FF6} = {F0B1A2A8-CF73-4219-9EF7-5D1F8F4DF0BE}
+		{DAB1D808-2BDD-4253-A431-7D8E4FA3AC6A} = {EDD9B664-6DC8-41CA-86B6-C581CF5AC08B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD7F57C8-635D-4857-8C7C-004C8C7E66B1}
+	EndGlobalSection
+EndGlobal
