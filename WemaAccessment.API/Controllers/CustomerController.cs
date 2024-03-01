@@ -13,11 +13,13 @@ namespace WemaAccessment.API.Controllers
   {
     private readonly ICustomerService _customerService;
     private readonly IValidator<CustomerDto> _customerDtoValidator;
+    private readonly IValidator<VerifyCustomerDto> _verifyCustomerDtoValidator;
 
-    public CustomerController(ICustomerService customerService, IValidator<CustomerDto> customerDtoValidator)
+    public CustomerController(ICustomerService customerService, IValidator<CustomerDto> customerDtoValidator, IValidator<VerifyCustomerDto> verifyCustomerDtoValidator)
     {
       _customerService = customerService;
       _customerDtoValidator = customerDtoValidator;
+      _verifyCustomerDtoValidator = verifyCustomerDtoValidator;
     }
     /// <summary>
     /// Endpoint to all customers
@@ -65,6 +67,11 @@ namespace WemaAccessment.API.Controllers
     [ProducesResponseType(typeof(ResponseModel), 200)]
     public async Task<IActionResult> VerifyCustomer(VerifyCustomerDto request)
     {
+      var validateModel = await _verifyCustomerDtoValidator.ValidateAsync(request);
+      if (!validateModel.IsValid)
+      {
+        return BadRequest(validateModel.ToString());
+      }
       var response = await _customerService.VerifiyCustomer(request);
       if (response.HasError)
       {

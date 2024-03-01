@@ -21,5 +21,9 @@ namespace WemaAccessment.Data.Dto
       // Use Regex.IsMatch to check if the value contains special characters.
       return Regex.IsMatch(value, pattern);
     }
+    public static bool BeAllDigits(int value)
+    {
+      return !string.IsNullOrEmpty(value.ToString()) && Regex.IsMatch(value.ToString(), @"^\d+$");
+    }
   }
 }

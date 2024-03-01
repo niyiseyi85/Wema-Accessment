@@ -22,6 +22,7 @@ namespace WemaAccessment.API.Configurations
       services.AddScoped<IOTPService, OTPService>();
       services.AddScoped<IThirdPartyService, ThirdPartyService>();
       services.AddScoped<IValidator<CustomerDto>, CustomerDtoRequestValidator>();
+      services.AddScoped<IValidator<VerifyCustomerDto>, VerifyCustomerDtoRequestValidator>();
     }
   }
 }
